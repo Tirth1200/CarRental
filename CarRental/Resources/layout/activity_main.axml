@@ -3,59 +3,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+	android:background="#ebf5fb"
     android:layout_height="match_parent">
-	<TableLayout
+
+		<TableLayout
+
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:id="@+id/tableLayout1">
+
 		<TableRow
 			android:id="@+id/tableRow1">
+
 			<TextView
 				android:text="Daily Rent"
+				android:textColor="#884ea0"
 				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_column="0"
 				android:id="@+id/textView9" />
+
 			<EditText
 				android:inputType="numberDecimal"
 				android:layout_column="1"
 				android:id="@+id/edtrent" />
+
 		</TableRow>
 		<TableRow
 			android:id="@+id/tableRow2">
+
 			<TextView
 				android:text="Number of Days"
+				android:textColor="#884ea0"
 				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_column="0"
 				android:id="@+id/textView10" />
+
 			<EditText
 				android:inputType="numberDecimal"
 				android:layout_column="1"
 				android:id="@+id/edtdays" />
+
 		</TableRow>
+
 		<TableRow
 			android:id="@+id/tableRow3">
+
 			<TextView
 				android:text="Drivers Age"
+				android:textColor="#884ea0"
 				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_column="0"
 				android:id="@+id/textView11" />
+
 			<RadioGroup
 				android:minWidth="25px"
 				android:minHeight="25px"
 				android:layout_column="1"
 				android:id="@+id/radioGroup1">
+
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Less Than 20"
 					android:id="@+id/rdb20" />
+
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Between 21-60"
 					android:id="@+id/rdb2160" />
+
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
@@ -63,73 +82,99 @@
 					android:id="@+id/rdb60" />
 			</RadioGroup>
 		</TableRow>
+
 		<TableRow
 			android:id="@+id/tableRow1">
+
 			<TextView
+
 				android:text="Options"
+				android:textColor="#884ea0"
 				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_column="0"
 				android:id="@+id/textView12" />
+
 			<RadioGroup
+
 				android:minWidth="25px"
 				android:minHeight="25px"
 				android:layout_column="1"
 				android:id="@+id/radioGroup2">
+
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="With GPS"
 					android:id="@+id/rdbgps" />
+
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Child Chair"
 					android:id="@+id/rdbchair" />
+
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Unlimited Mileage"
 					android:id="@+id/rdbmileage" />
 			</RadioGroup>
+
 		</TableRow>
+
 		<TableRow
 			android:id="@+id/tableRow2">
+
 			<TextView
+
 				android:text="Amount"
+				android:textColor="#2471a3"
 				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_column="0"
 				android:id="@+id/textView13" />
+
 			<EditText
 				android:inputType="numberDecimal"
 				android:layout_column="1"
 				android:id="@+id/edtamount" />
+
 		</TableRow>
+
 		<TableRow
 			android:id="@+id/tableRow3">
+
 			<TextView
 				android:text="Total"
+				android:textColor="#2471a3"
 				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_column="0"
 				android:id="@+id/textView14" />
+
 			<EditText
 				android:inputType="numberDecimal"
 				android:layout_column="1"
 				android:id="@+id/edttotal" />
+
 		</TableRow>
+
 		<TableRow
 			android:id="@+id/tableRow1">
+
 				<Button
 					android:text="Calculate"
 					android:layout_width="match_parent"
+				android:background="#58d68d"
 					android:layout_height="wrap_content"
 					android:id="@+id/btncalculate" />
+
 				<Button
 					android:text="Clear"
 					android:layout_width="match_parent"
+				android:background="#f5b7b1"
 					android:layout_height="wrap_content"
 					android:id="@+id/btnclear" />
+
 		</TableRow>
+
 	</TableLayout>
-
-
 </android.support.design.widget.CoordinatorLayout>

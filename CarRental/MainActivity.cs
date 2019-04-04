@@ -39,18 +39,23 @@ namespace CarRental
 
             btcalculate.Click += delegate
       {
-          double rent = double.Parse(vrent.Text);
-          double days = double.Parse(vdays.Text);
+
           if (rd20.Checked)
           {
+              double rent = double.Parse(vrent.Text);
+              double days = double.Parse(vdays.Text);
               result1 = (rent * days) + 5;
           }
           else if (rd2160.Checked)
           {
+              double rent = double.Parse(vrent.Text);
+              double days = double.Parse(vdays.Text);
               result1 = (rent * days);
           }
           else if (rd60.Checked)
           {
+              double rent = double.Parse(vrent.Text);
+              double days = double.Parse(vdays.Text);
               result1 = (rent * days);
           }
           else
