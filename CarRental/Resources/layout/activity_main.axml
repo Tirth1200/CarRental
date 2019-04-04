@@ -4,29 +4,132 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+	<TableLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/tableLayout1">
+		<TableRow
+			android:id="@+id/tableRow1">
+			<TextView
+				android:text="Daily Rent"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_column="0"
+				android:id="@+id/textView9" />
+			<EditText
+				android:inputType="numberDecimal"
+				android:layout_column="1"
+				android:id="@+id/edtrent" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/tableRow2">
+			<TextView
+				android:text="Number of Days"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_column="0"
+				android:id="@+id/textView10" />
+			<EditText
+				android:inputType="numberDecimal"
+				android:layout_column="1"
+				android:id="@+id/edtdays" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/tableRow3">
+			<TextView
+				android:text="Drivers Age"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_column="0"
+				android:id="@+id/textView11" />
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_column="1"
+				android:id="@+id/radioGroup1">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Less Than 20"
+					android:id="@+id/rdb20" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Between 21-60"
+					android:id="@+id/rdb2160" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="More than 60"
+					android:id="@+id/rdb60" />
+			</RadioGroup>
+		</TableRow>
+		<TableRow
+			android:id="@+id/tableRow1">
+			<TextView
+				android:text="Options"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_column="0"
+				android:id="@+id/textView12" />
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_column="1"
+				android:id="@+id/radioGroup2">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="With GPS"
+					android:id="@+id/rdbgps" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Child Chair"
+					android:id="@+id/rdbchair" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Unlimited Mileage"
+					android:id="@+id/rdbmileage" />
+			</RadioGroup>
+		</TableRow>
+		<TableRow
+			android:id="@+id/tableRow2">
+			<TextView
+				android:text="Amount"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_column="0"
+				android:id="@+id/textView13" />
+			<EditText
+				android:inputType="numberDecimal"
+				android:layout_column="1"
+				android:id="@+id/edtamount" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/tableRow3">
+			<TextView
+				android:text="Total"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_column="0"
+				android:id="@+id/textView14" />
+			<EditText
+				android:inputType="numberDecimal"
+				android:layout_column="1"
+				android:id="@+id/edttotal" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/tableRow1">
+				<Button
+					android:text="Calculate"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/btncalculate" />
+				<Button
+					android:text="Clear"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/btnclear" />
+		</TableRow>
+	</TableLayout>
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </android.support.design.widget.CoordinatorLayout>
